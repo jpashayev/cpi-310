@@ -1,0 +1,96 @@
+body
+{
+  background-color: lightblue;
+}
+h1
+{
+  color: darkblue ;
+}
+a
+{
+  color: darkred;
+  text-indent: 100px;
+}
+td.normal
+{
+  font-size: 30px;
+  text-align: center;
+}
+td.input
+{
+  font-size: 30px;
+  text-align: left;
+  left: 0px;
+}
+br
+{
+  display: block;
+  margin-bottom: 3px;
+  font-size: 3px;
+  line-height: 3px;
+}
+table
+{
+  border: 2px
+  solid #000000;
+}
+td {
+  border: 2px solid #000000;
+  text-align: center;
+  vertical-align: middle;
+  background-color: lightgray;
+}
+input
+{
+  padding: 0;
+  border: 0;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  background-color: lightgray;
+  outline: none;
+  line-height: 0px;
+}
+#cellE1,#cellE2,#cellE3,#cellE7,#cellE8,#cellE9,
+#cellE11,#cellE12,#cellE13,#cellE17,#cellE18,#cellE19,
+#cellE21,#cellE22,#cellE23,#cellE27,#cellE28,#cellE29,
+#cellE34,#cellE35,#cellE36,
+#cellE44,#cellE45,#cellE46,
+#cellE54,#cellE55,#cellE56,
+#cellE61,#cellE62,#cellE63,#cellE67,#cellE68,#cellE69,
+#cellE71,#cellE72,#cellE73,#cellE77,#cellE78,#cellE79,
+#cellE81,#cellE82,#cellE83,#cellE87,#cellE88,#cellE89
+{
+  background-color: darkgray;
+}
+
+#cell1,#cell2,#cell3,#cell7,#cell8,#cell9,
+#cell11,#cell12,#cell13,#cell17,#cell18,#cell19,
+#cell21,#cell22,#cell23,#cell27,#cell28,#cell29,
+#cell34,#cell35,#cell36,
+#cell44,#cell45,#cell46,
+#cell54,#cell55,#cell56,
+#cell61,#cell62,#cell63,#cell67,#cell68,#cell69,
+#cell71,#cell72,#cell73,#cell77,#cell78,#cell79,
+#cell81,#cell82,#cell83,#cell87,#cell88,#cell89
+{
+  background-color: darkgrey;
+}
+
+
+#cellE1,#cellE2,#cellE3,#cellE4,#cellE5,#cellE6,#cellE7,#cellE8,#cellE9,
+#cellE11,#cellE12,#cellE13,#cellE14,#cellE15,#cellE16,#cellE17,#cellE18,#cellE19,
+#cellE21,#cellE22,#cellE23,#cellE24,#cellE25,#cellE26,#cellE27,#cellE28,#cellE29,
+#cellE31,#cellE32,#cellE33,#cellE34,#cellE35,#cellE36,#cellE37,#cellE38,#cellE39,
+#cellE41,#cellE42,#cellE43,#cellE44,#cellE45,#cellE46,#cellE47,#cellE48,#cellE49,
+#cellE51,#cellE52,#cellE53,#cellE54,#cellE55,#cellE56,#cellE57,#cellE58,#cellE59,
+#cellE61,#cellE62,#cellE63,#cellE64,#cellE65,#cellE66,#cellE67,#cellE68,#cellE69,
+#cellE71,#cellE72,#cellE73,#cellE74,#cellE75,#cellE76,#cellE77,#cellE78,#cellE79,
+#cellE81,#cellE82,#cellE83,#cellE84,#cellE85,#cellE86,#cellE87,#cellE88,#cellE89
+{
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}

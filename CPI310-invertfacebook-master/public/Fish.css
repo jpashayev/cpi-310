@@ -1,0 +1,42 @@
+body
+{
+  background-color: lightblue;
+  text-align: center;
+}
+h1
+{
+  color: darkblue ;
+}
+a
+{
+  color: darkred;
+  text-indent: 100px;
+}
+button
+{
+  padding: 0;
+  border: 0;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  background-color: gray;
+  outline: none;
+  line-height: 0px;
+}
+g
+{
+  color: darkgreen;
+  font-size: 50px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#FishButton
+{
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}

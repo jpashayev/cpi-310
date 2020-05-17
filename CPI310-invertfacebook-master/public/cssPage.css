@@ -1,0 +1,236 @@
+/*All headers are the same style, but different sizes*/
+h1.welcome{
+	color: #299386;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	padding: 20px;
+}
+
+h2.welcomesub{
+	color: #299386;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+h1 {
+	color: #FFFFFF;
+}
+
+
+/*Not centered due to it being a header for paragraph text*/
+h3.nameHead{
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	color: #CB2979;
+}
+
+div.div1 {
+	float: right;
+}
+
+a {
+	text-decoration:none;
+	color: #041144;
+	font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+	color: #B6362F;
+}
+
+/*the paragraph classes are for the body and are the same for the most part throughout, until
+there is a specific reason that appears for one to differ from the other body texts*/
+p.specOne{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+p.specTwo{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+p.specThree{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+p.teamEx{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+p.projectP{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+hr{
+	border:0;
+	border-top:1px solid #eee;
+	margin:20px;
+}
+
+.textBox{
+	margin:20px!important;
+	margin-left:100px!important;
+	margin-right:100px!important;
+	background-color: rgba(255, 255, 255,0.8)!important;
+	padding:16px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.errorBox{
+	margin:20px!important;
+	margin-left:100px!important;
+	margin-right:100px!important;
+	background-color: rgba(255, 100, 55,0.8)!important;
+	padding:16px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.correctionBox{
+	margin:10px!important;
+	margin-left:100px!important;
+	margin-right:100px!important;
+	background-color: rgb(0, 255, 100)!important;
+	vertical-align: middle!important;
+	padding:8px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.textBoxTwo{
+	margin:20px!important;
+	margin-left:100px!important;
+	margin-right:100px!important;
+	background-color: rgba(255, 255, 255,0.8)!important;
+	padding:6px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+	border: 1px solid red;
+	outline-style: double;
+	outline-color: red;
+}
+
+.chatBox{
+	margin:20px!important;
+	margin-left:100px!important;
+	margin-right:100px!important;
+	background-color: rgba(200, 200, 200,0.8)!important;
+	padding:6px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+	border: 1px solid red;
+	outline-style: double;
+	outline-color: white;
+}
+
+.textLogin{
+	margin:20px!important;
+	margin-left:100px!important;
+	margin-right:100px!important;
+	background-color: rgb(25, 25, 25)!important;
+	padding:7px;
+	border: 1px solid red;
+	outline-style: solid;
+	outline-color: red;
+}
+
+.textExplain{
+	margin:10px!important;
+	margin-left:100px!important;
+	margin-right:100px!important;
+	background-color: rgb(25, 35, 25)!important;
+	font-family: Georgia Italica;
+	padding:20px;
+	border: 1px solid blue;
+	outline-style: single;
+	outline-color: white;
+}
+
+table {
+	width: 100%;
+	border: 1px solid white;
+}
+th {	
+	text-align: left;
+	vertical-align: bottom;
+	padding: 7px;
+	border-bottom: 1px solid #ddd;
+	border: 1px groove white;
+}
+
+body, html {
+    height: 100%;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/header.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.headerText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columnTeam {
+  float: center;
+  width: 50%;
+  text-align: center;
+  padding: 25px;
+}
+
+img.pic{
+	max-width:50%;
+    height:auto;
+}
+
+img.avatar:hover {
+	animation: hop 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hop {
+  0% { transform: translate(0px, -4px); }
+  10% { transform: translate(0px, -6px); }
+  20% { transform: translate(0px, -8px); }
+  30% { transform: translate(0px, -6px); }
+  40% { transform: translate(0px, -4px); }
+  50% { transform: translate(0px, 0px); }
+  60% { transform: translate(0px, -2px); }
+  70% { transform: translate(0px, -4px); }
+  80% { transform: translate(0px, -2px); }
+  90% { transform: translate(0px, -1px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.column {
+  float: center;
+  width: 33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Give full use to the body of the website that is also unique*/
+body{
+	background: #041144;
+	background: linear-gradient(90deg, #299386, #166781, #041144);
+}

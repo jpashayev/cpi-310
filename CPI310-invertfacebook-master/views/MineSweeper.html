@@ -1,0 +1,255 @@
+<html>
+<head>
+  <!-- title -->
+<title>MineSweeper</title>
+<h1>Mine Sweeper</h1>
+<link rel="stylesheet" href="MSMaker.css">
+<script type="text/javascript" src="MSMaker.js"></script>
+</head>
+<body onload="RandomizeTime()">
+<div align="left">
+	<nav class="navbar navbar-dark navbar-expand-lg navbar-inverse bg-inverse">
+		<img src="images/tempLogo.png" alt="Logo" style="width:5%;">
+		<a class="nav-link" style="color: #FFFFFF;" href="/">Home<span class="sr-only"></span></a>
+	<ul class="navbar-nav mr-auto">
+	     <li class="nav-item">
+          <a class="nav-link" style="color: #041144;" href="Sudoku.html">Sudoku</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #041144;" href="WordSearch.html">Word Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #041144;" href="Fishing.html">Fishing</a>
+        </li>
+      </ul>
+	</div>
+  <br></br>
+  <input value="Score:" style="position: absolute; top: 20px; bottom: 0px; left: 250px; right: 0;" disabled="true"></input>
+  <input value="0" style="position: absolute; top: 20px; bottom: 0px; left: 350px; right: 0;" disabled="true" id="Score"></input>
+  <b style="position: absolute; top: 20px; bottom: 0px; left: 850px; right: 0;" disabled="true" id="Howdy">Welcome. Your goal is to locate all</b>
+  <b style="position: absolute; top: 40px; bottom: 0px; left: 850px; right: 0;" disabled="true" id="Howdy">4 mines within each row. Good Luck</b>
+  <button onclick="Flip();" style="position: absolute; top: 20px; bottom: 0px; left: 200px; right: 0;" id="flip">Flip</button>
+  <div class="container">
+      <tr>
+        <button onclick="Alerting1();" id="cellE1">-</button>
+        <button onclick="Alerting2();" id="cellE2">-</button>
+        <button onclick="Alerting3();" id="cellE3">-</button>
+        <button onclick="Alerting4();" id="cellE4">-</button>
+        <button onclick="Alerting5();" id="cellE5">-</button>
+        <button onclick="Alerting6();" id="cellE6">-</button>
+        <button onclick="Alerting7();" id="cellE7">-</button>
+        <button onclick="Alerting8();" id="cellE8">-</button>
+        <button onclick="Alerting9();" id="cellE9">-</button>
+        <button onclick="Alerting10();" id="cellE10">-</button>
+        <button onclick="Alerting11();" id="cellE11">-</button>
+        <button onclick="Alerting12();" id="cellE12">-</button>
+        <button onclick="Alerting13();" id="cellE13">-</button>
+        <button onclick="Alerting14();" id="cellE14">-</button>
+        <button onclick="Alerting15();" id="cellE15">-</button>
+        <button onclick="Alerting16();" id="cellE16">-</button>
+        <button onclick="Alerting17();" id="cellE17">-</button>
+        <button onclick="Alerting18();" id="cellE18">-</button>
+        <button onclick="Alerting19();" id="cellE19">-</button>
+        <button onclick="Alerting20();" id="cellE20">-</button>
+    </tr><br></br>
+    <tr>
+        <button onclick="Alerting21();" id="cellE21">-</button>
+        <button onclick="Alerting22();" id="cellE22">-</button>
+        <button onclick="Alerting23();" id="cellE23">-</button>
+        <button onclick="Alerting24();" id="cellE24">-</button>
+        <button onclick="Alerting25();" id="cellE25">-</button>
+        <button onclick="Alerting26();" id="cellE26">-</button>
+        <button onclick="Alerting27();" id="cellE27">-</button>
+        <button onclick="Alerting28();" id="cellE28">-</button>
+        <button onclick="Alerting29();" id="cellE29">-</button>
+        <button onclick="Alerting30();" id="cellE30">-</button>
+        <button onclick="Alerting31();" id="cellE31">-</button>
+        <button onclick="Alerting32();" id="cellE32">-</button>
+        <button onclick="Alerting33();" id="cellE33">-</button>
+        <button onclick="Alerting34();" id="cellE34">-</button>
+        <button onclick="Alerting35();" id="cellE35">-</button>
+        <button onclick="Alerting36();" id="cellE36">-</button>
+        <button onclick="Alerting37();" id="cellE37">-</button>
+        <button onclick="Alerting38();" id="cellE38">-</button>
+        <button onclick="Alerting39();" id="cellE39">-</button>
+        <button onclick="Alerting40();" id="cellE40">-</button>
+    </tr><br></br>
+    <tr>
+        <button onclick="Alerting41();" id="cellE41">-</button>
+        <button onclick="Alerting42();" id="cellE42">-</button>
+        <button onclick="Alerting43();" id="cellE43">-</button>
+        <button onclick="Alerting44();" id="cellE44">-</button>
+        <button onclick="Alerting45();" id="cellE45">-</button>
+        <button onclick="Alerting46();" id="cellE46">-</button>
+        <button onclick="Alerting47();" id="cellE47">-</button>
+        <button onclick="Alerting48();" id="cellE48">-</button>
+        <button onclick="Alerting49();" id="cellE49">-</button>
+        <button onclick="Alerting50();" id="cellE50">-</button>
+        <button onclick="Alerting51();" id="cellE51">-</button>
+        <button onclick="Alerting52();" id="cellE52">-</button>
+        <button onclick="Alerting53();" id="cellE53">-</button>
+        <button onclick="Alerting54();" id="cellE54">-</button>
+        <button onclick="Alerting55();" id="cellE55">-</button>
+        <button onclick="Alerting56();" id="cellE56">-</button>
+        <button onclick="Alerting57();" id="cellE57">-</button>
+        <button onclick="Alerting58();" id="cellE58">-</button>
+        <button onclick="Alerting59();" id="cellE59">-</button>
+        <button onclick="Alerting60();" id="cellE60">-</button>
+    </tr><br></br>
+    <tr>
+        <button onclick="Alerting61();" id="cellE61">-</button>
+        <button onclick="Alerting62();" id="cellE62">-</button>
+        <button onclick="Alerting63();" id="cellE63">-</button>
+        <button onclick="Alerting64();" id="cellE64">-</button>
+        <button onclick="Alerting65();" id="cellE65">-</button>
+        <button onclick="Alerting66();" id="cellE66">-</button>
+        <button onclick="Alerting67();" id="cellE67">-</button>
+        <button onclick="Alerting68();" id="cellE68">-</button>
+        <button onclick="Alerting69();" id="cellE69">-</button>
+        <button onclick="Alerting70();" id="cellE70">-</button>
+        <button onclick="Alerting71();" id="cellE71">-</button>
+        <button onclick="Alerting72();" id="cellE72">-</button>
+        <button onclick="Alerting73();" id="cellE73">-</button>
+        <button onclick="Alerting74();" id="cellE74">-</button>
+        <button onclick="Alerting75();" id="cellE75">-</button>
+        <button onclick="Alerting76();" id="cellE76">-</button>
+        <button onclick="Alerting77();" id="cellE77">-</button>
+        <button onclick="Alerting78();" id="cellE78">-</button>
+        <button onclick="Alerting79();" id="cellE79">-</button>
+        <button onclick="Alerting80();" id="cellE80">-</button>
+    </tr><br></br>
+    <tr>
+        <button onclick="Alerting81();" id="cellE81">-</button>
+        <button onclick="Alerting82();" id="cellE82">-</button>
+        <button onclick="Alerting83();" id="cellE83">-</button>
+        <button onclick="Alerting84();" id="cellE84">-</button>
+        <button onclick="Alerting85();" id="cellE85">-</button>
+        <button onclick="Alerting86();" id="cellE86">-</button>
+        <button onclick="Alerting87();" id="cellE87">-</button>
+        <button onclick="Alerting88();" id="cellE88">-</button>
+        <button onclick="Alerting89();" id="cellE89">-</button>
+        <button onclick="Alerting90();" id="cellE90">-</button>
+        <button onclick="Alerting91();" id="cellE91">-</button>
+        <button onclick="Alerting92();" id="cellE92">-</button>
+        <button onclick="Alerting93();" id="cellE93">-</button>
+        <button onclick="Alerting94();" id="cellE94">-</button>
+        <button onclick="Alerting95();" id="cellE95">-</button>
+        <button onclick="Alerting96();" id="cellE96">-</button>
+        <button onclick="Alerting97();" id="cellE97">-</button>
+        <button onclick="Alerting98();" id="cellE98">-</button>
+        <button onclick="Alerting99();" id="cellE99">-</button>
+        <button onclick="Alerting100();" id="cellE100">-</button>
+    </tr><br></br>
+    <tr>
+      <button onclick="Alerting101();" id="cellE101">-</button>
+      <button onclick="Alerting102();" id="cellE102">-</button>
+      <button onclick="Alerting103();" id="cellE103">-</button>
+      <button onclick="Alerting104();" id="cellE104">-</button>
+      <button onclick="Alerting105();" id="cellE105">-</button>
+      <button onclick="Alerting106();" id="cellE106">-</button>
+      <button onclick="Alerting107();" id="cellE107">-</button>
+      <button onclick="Alerting108();" id="cellE108">-</button>
+      <button onclick="Alerting109();" id="cellE109">-</button>
+      <button onclick="Alerting110();" id="cellE110">-</button>
+      <button onclick="Alerting111();" id="cellE111">-</button>
+      <button onclick="Alerting112();" id="cellE112">-</button>
+      <button onclick="Alerting113();" id="cellE113">-</button>
+      <button onclick="Alerting114();" id="cellE114">-</button>
+      <button onclick="Alerting115();" id="cellE115">-</button>
+      <button onclick="Alerting116();" id="cellE116">-</button>
+      <button onclick="Alerting117();" id="cellE117">-</button>
+      <button onclick="Alerting118();" id="cellE118">-</button>
+      <button onclick="Alerting119();" id="cellE119">-</button>
+      <button onclick="Alerting120();" id="cellE120">-</button>
+    </tr><br></br>
+    <tr>
+      <button onclick="Alerting121();" id="cellE121">-</button>
+      <button onclick="Alerting122();" id="cellE122">-</button>
+      <button onclick="Alerting123();" id="cellE123">-</button>
+      <button onclick="Alerting124();" id="cellE124">-</button>
+      <button onclick="Alerting125();" id="cellE125">-</button>
+      <button onclick="Alerting126();" id="cellE126">-</button>
+      <button onclick="Alerting127();" id="cellE127">-</button>
+      <button onclick="Alerting128();" id="cellE128">-</button>
+      <button onclick="Alerting129();" id="cellE129">-</button>
+      <button onclick="Alerting130();" id="cellE130">-</button>
+      <button onclick="Alerting131();" id="cellE131">-</button>
+      <button onclick="Alerting132();" id="cellE132">-</button>
+      <button onclick="Alerting133();" id="cellE133">-</button>
+      <button onclick="Alerting134();" id="cellE134">-</button>
+      <button onclick="Alerting135();" id="cellE135">-</button>
+      <button onclick="Alerting136();" id="cellE136">-</button>
+      <button onclick="Alerting137();" id="cellE137">-</button>
+      <button onclick="Alerting138();" id="cellE138">-</button>
+      <button onclick="Alerting139();" id="cellE139">-</button>
+      <button onclick="Alerting140();" id="cellE140">-</button>
+    </tr><br></br>
+    <tr>
+      <button onclick="Alerting141();" id="cellE141">-</button>
+      <button onclick="Alerting142();" id="cellE142">-</button>
+      <button onclick="Alerting143();" id="cellE143">-</button>
+      <button onclick="Alerting144();" id="cellE144">-</button>
+      <button onclick="Alerting145();" id="cellE145">-</button>
+      <button onclick="Alerting146();" id="cellE146">-</button>
+      <button onclick="Alerting147();" id="cellE147">-</button>
+      <button onclick="Alerting148();" id="cellE148">-</button>
+      <button onclick="Alerting149();" id="cellE149">-</button>
+      <button onclick="Alerting150();" id="cellE150">-</button>
+      <button onclick="Alerting151();" id="cellE151">-</button>
+      <button onclick="Alerting152();" id="cellE152">-</button>
+      <button onclick="Alerting153();" id="cellE153">-</button>
+      <button onclick="Alerting154();" id="cellE154">-</button>
+      <button onclick="Alerting155();" id="cellE155">-</button>
+      <button onclick="Alerting156();" id="cellE156">-</button>
+      <button onclick="Alerting157();" id="cellE157">-</button>
+      <button onclick="Alerting158();" id="cellE158">-</button>
+      <button onclick="Alerting159();" id="cellE159">-</button>
+      <button onclick="Alerting160();" id="cellE160">-</button>
+    </tr><br></br>
+    <tr>
+      <button onclick="Alerting161();" id="cellE161">-</button>
+      <button onclick="Alerting162();" id="cellE162">-</button>
+      <button onclick="Alerting163();" id="cellE163">-</button>
+      <button onclick="Alerting164();" id="cellE164">-</button>
+      <button onclick="Alerting165();" id="cellE165">-</button>
+      <button onclick="Alerting166();" id="cellE166">-</button>
+      <button onclick="Alerting167();" id="cellE167">-</button>
+      <button onclick="Alerting168();" id="cellE168">-</button>
+      <button onclick="Alerting169();" id="cellE169">-</button>
+      <button onclick="Alerting170();" id="cellE170">-</button>
+      <button onclick="Alerting171();" id="cellE171">-</button>
+      <button onclick="Alerting172();" id="cellE172">-</button>
+      <button onclick="Alerting173();" id="cellE173">-</button>
+      <button onclick="Alerting174();" id="cellE174">-</button>
+      <button onclick="Alerting175();" id="cellE175">-</button>
+      <button onclick="Alerting176();" id="cellE176">-</button>
+      <button onclick="Alerting177();" id="cellE177">-</button>
+      <button onclick="Alerting178();" id="cellE178">-</button>
+      <button onclick="Alerting179();" id="cellE179">-</button>
+      <button onclick="Alerting180();" id="cellE180">-</button>
+    </tr><br></br>
+    <tr>
+      <button onclick="Alerting181();" id="cellE181">-</button>
+      <button onclick="Alerting182();" id="cellE182">-</button>
+      <button onclick="Alerting183();" id="cellE183">-</button>
+      <button onclick="Alerting184();" id="cellE184">-</button>
+      <button onclick="Alerting185();" id="cellE185">-</button>
+      <button onclick="Alerting186();" id="cellE186">-</button>
+      <button onclick="Alerting187();" id="cellE187">-</button>
+      <button onclick="Alerting188();" id="cellE188">-</button>
+      <button onclick="Alerting189();" id="cellE189">-</button>
+      <button onclick="Alerting190();" id="cellE190">-</button>
+      <button onclick="Alerting191();" id="cellE191">-</button>
+      <button onclick="Alerting192();" id="cellE192">-</button>
+      <button onclick="Alerting193();" id="cellE193">-</button>
+      <button onclick="Alerting194();" id="cellE194">-</button>
+      <button onclick="Alerting195();" id="cellE195">-</button>
+      <button onclick="Alerting196();" id="cellE196">-</button>
+      <button onclick="Alerting197();" id="cellE197">-</button>
+      <button onclick="Alerting198();" id="cellE198">-</button>
+      <button onclick="Alerting199();" id="cellE199">-</button>
+      <button onclick="Alerting200();" id="cellE200">-</button>
+    </tr><br></br>
+</div>
+</body>
+</html>

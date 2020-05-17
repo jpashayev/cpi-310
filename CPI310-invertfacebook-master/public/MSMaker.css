@@ -1,0 +1,96 @@
+body
+{
+  background-color: lightblue;
+  text-align: center;
+}
+h1
+{
+  color: darkblue ;
+  padding: 0px;
+  border: 0px;
+  text-align: center;
+}
+b.ScoreH
+{
+  color: darkblue ;
+  text-align: center;
+  height: 30px;
+  width: 50px;
+}
+a
+{
+  color: darkred;
+  text-indent: 100px;
+}
+p.words
+{
+  color: darkgreen;
+  font-size: 20px;
+}
+td.normal
+{
+  font-size: 40px;
+  text-align: center;
+}
+body.Old
+{
+  text-align: center;
+}
+body.New
+{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+button
+{
+  padding: 0px;
+  border: 0px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: gray;
+  outline: none;
+  line-height: 0px;
+  color: black;
+}
+br
+{
+  display: block;
+  margin-bottom: 2px;
+  font-size: 2px;
+  line-height: 2px;
+}
+input
+{
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+}
+#flip,#cellE1,#cellE2,#cellE3,#cellE4,#cellE5,#cellE6,#cellE7,#cellE8,#cellE9,#cellE10,
+#cellE11,#cellE12,#cellE13,#cellE14,#cellE15,#cellE16,#cellE17,#cellE18,#cellE19,#cellE20,
+#cellE21,#cellE22,#cellE23,#cellE24,#cellE25,#cellE26,#cellE27,#cellE28,#cellE29,#cellE30,
+#cellE31,#cellE32,#cellE33,#cellE34,#cellE35,#cellE36,#cellE37,#cellE38,#cellE39,#cellE40,
+#cellE41,#cellE42,#cellE43,#cellE44,#cellE45,#cellE46,#cellE47,#cellE48,#cellE49,#cellE50,
+#cellE51,#cellE52,#cellE53,#cellE54,#cellE55,#cellE56,#cellE57,#cellE58,#cellE59,#cellE60,
+#cellE61,#cellE62,#cellE63,#cellE64,#cellE65,#cellE66,#cellE67,#cellE68,#cellE69,#cellE70,
+#cellE71,#cellE72,#cellE73,#cellE74,#cellE75,#cellE76,#cellE77,#cellE78,#cellE79,#cellE80,
+#cellE81,#cellE82,#cellE83,#cellE84,#cellE85,#cellE86,#cellE87,#cellE88,#cellE89,#cellE90,
+#cellE91,#cellE92,#cellE93,#cellE94,#cellE95,#cellE96,#cellE97,#cellE98,#cellE99,#cellE100,
+#cellE101,#cellE102,#cellE103,#cellE104,#cellE105,#cellE106,#cellE107,#cellE108,#cellE109,#cellE110,
+#cellE111,#cellE112,#cellE113,#cellE114,#cellE115,#cellE116,#cellE117,#cellE118,#cellE119,#cellE120,
+#cellE121,#cellE122,#cellE123,#cellE124,#cellE125,#cellE126,#cellE127,#cellE128,#cellE129,#cellE130,
+#cellE131,#cellE132,#cellE133,#cellE134,#cellE135,#cellE136,#cellE137,#cellE138,#cellE139,#cellE140,
+#cellE141,#cellE142,#cellE143,#cellE144,#cellE145,#cellE146,#cellE147,#cellE148,#cellE149,#cellE150,
+#cellE151,#cellE152,#cellE153,#cellE154,#cellE155,#cellE156,#cellE157,#cellE158,#cellE159,#cellE160,
+#cellE161,#cellE162,#cellE163,#cellE164,#cellE165,#cellE166,#cellE167,#cellE168,#cellE169,#cellE170,
+#cellE171,#cellE172,#cellE173,#cellE174,#cellE175,#cellE176,#cellE177,#cellE178,#cellE179,#cellE180,
+#cellE181,#cellE182,#cellE183,#cellE184,#cellE185,#cellE186,#cellE187,#cellE188,#cellE189,#cellE190,
+#cellE191,#cellE192,#cellE193,#cellE194,#cellE195,#cellE196,#cellE197,#cellE198,#cellE199,#cellE200
+{
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}

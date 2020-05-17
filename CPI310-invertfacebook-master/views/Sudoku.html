@@ -1,0 +1,240 @@
+<html>
+<head>
+  <!-- title -->
+<title>Sudoku</title>
+<h1>Sudoku</h1>
+<link rel="stylesheet" href="Sudoku.css">
+<script type="text/javascript" src="BoardMaker.js"></script>
+</head>
+<body class="New" onload="UpdateTableMedium();">
+<div align="left">
+	<nav class="navbar navbar-dark navbar-expand-lg navbar-inverse bg-inverse">
+		<img src="images/tempLogo.png" alt="Logo" style="width:5%;">
+		<a class="nav-link" style="color: #FFFFFF;" href="/">Home<span class="sr-only"></span></a>
+	<ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" style="color: #041144;" href="WordSearch.html">Word Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #041144;" href="MineSweeper.html">Mine Sweeper</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #041144;" href="Fishing.html">Fishing</a>
+        </li>
+      </ul>
+	</div>
+  <br></br>
+  <button onclick="UpdateTableEasy();">Start(Easy)</button>
+  <button onclick="UpdateTableMedium();">Start</button>
+  <button onclick="UpdateTableHard();">Start(Hard)</button>
+  <button onclick="CheckSolution();">Check Solution</button>
+  <button onclick="GiveUp();">Give Up</button>
+  <br></br><br></br><br></br><br></br><br></br><br></br>
+  <h3 style="position: absolute; top: 40px; bottom: 0; left: 800px; right: 0;">The goal is to get 1, 2, 3, 4, 5, 6, 7, 8, and 9 in every column, row, and sub-square. There are no repeating values.</h3>
+<div class="container">
+    <tr>
+        <input type="text" id="cellE1"></input>
+        <input type="text" id="cellE2"></input>
+        <input type="text" id="cellE3"></input>
+        <input type="text" id="cellE4"></input>
+        <input type="text" id="cellE5"></input>
+        <input type="text" id="cellE6"></input>
+        <input type="text" id="cellE7"></input>
+        <input type="text" id="cellE8"></input>
+        <input type="text" id="cellE9"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE11"></input>
+        <input type="text" id="cellE12"></input>
+        <input type="text" id="cellE13"></input>
+        <input type="text" id="cellE14"></input>
+        <input type="text" id="cellE15"></input>
+        <input type="text" id="cellE16"></input>
+        <input type="text" id="cellE17"></input>
+        <input type="text" id="cellE18"></input>
+        <input type="text" id="cellE19"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE21"></input>
+        <input type="text" id="cellE22"></input>
+        <input type="text" id="cellE23"></input>
+        <input type="text" id="cellE24"></input>
+        <input type="text" id="cellE25"></input>
+        <input type="text" id="cellE26"></input>
+        <input type="text" id="cellE27"></input>
+        <input type="text" id="cellE28"></input>
+        <input type="text" id="cellE29"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE31"></input>
+        <input type="text" id="cellE32"></input>
+        <input type="text" id="cellE33"></input>
+        <input type="text" id="cellE34"></input>
+        <input type="text" id="cellE35"></input>
+        <input type="text" id="cellE36"></input>
+        <input type="text" id="cellE37"></input>
+        <input type="text" id="cellE38"></input>
+        <input type="text" id="cellE39"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE41"></input>
+        <input type="text" id="cellE42"></input>
+        <input type="text" id="cellE43"></input>
+        <input type="text" id="cellE44"></input>
+        <input type="text" id="cellE45"></input>
+        <input type="text" id="cellE46"></input>
+        <input type="text" id="cellE47"></input>
+        <input type="text" id="cellE48"></input>
+        <input type="text" id="cellE49"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE51"></input>
+        <input type="text" id="cellE52"></input>
+        <input type="text" id="cellE53"></input>
+        <input type="text" id="cellE54"></input>
+        <input type="text" id="cellE55"></input>
+        <input type="text" id="cellE56"></input>
+        <input type="text" id="cellE57"></input>
+        <input type="text" id="cellE58"></input>
+        <input type="text" id="cellE59"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE61"></input>
+        <input type="text" id="cellE62"></input>
+        <input type="text" id="cellE63"></input>
+        <input type="text" id="cellE64"></input>
+        <input type="text" id="cellE65"></input>
+        <input type="text" id="cellE66"></input>
+        <input type="text" id="cellE67"></input>
+        <input type="text" id="cellE68"></input>
+        <input type="text" id="cellE69"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE71"></input>
+        <input type="text" id="cellE72"></input>
+        <input type="text" id="cellE73"></input>
+        <input type="text" id="cellE74"></input>
+        <input type="text" id="cellE75"></input>
+        <input type="text" id="cellE76"></input>
+        <input type="text" id="cellE77"></input>
+        <input type="text" id="cellE78"></input>
+        <input type="text" id="cellE79"></input>
+    </tr><br></br>
+    <tr>
+        <input type="text" id="cellE81"></input>
+        <input type="text" id="cellE82"></input>
+        <input type="text" id="cellE83"></input>
+        <input type="text" id="cellE84"></input>
+        <input type="text" id="cellE85"></input>
+        <input type="text" id="cellE86"></input>
+        <input type="text" id="cellE87"></input>
+        <input type="text" id="cellE88"></input>
+        <input type="text" id="cellE89"></input>
+    </tr><br></br>
+</div>
+</body>
+<br></br>
+  <table style="position: absolute; top: 140px; bottom: 0; left: 800px; right: 0;" border="2" width="425px" height="425px" id="Solution">
+      <h1 style="position: absolute; top: 0px; bottom: 0; left: 800px; right: 0;">Answer Board:</h1>
+      <tr class="tr1">
+          <td class="normal" id="cell1"></td>
+          <td class="normal" id="cell2"></td>
+          <td class="normal" id="cell3"></td>
+          <td class="normal" id="cell4"></td>
+          <td class="normal" id="cell5"></td>
+          <td class="normal" id="cell6"></td>
+          <td class="normal" id="cell7"></td>
+          <td class="normal" id="cell8"></td>
+          <td class="normal" id="cell9"></td>
+      </tr>
+      <tr class="tr2">
+          <td class="normal" id="cell11"></td>
+          <td class="normal" id="cell12"></td>
+          <td class="normal" id="cell13"></td>
+          <td class="normal" id="cell14"></td>
+          <td class="normal" id="cell15"></td>
+          <td class="normal" id="cell16"></td>
+          <td class="normal" id="cell17"></td>
+          <td class="normal" id="cell18"></td>
+          <td class="normal" id="cell19"></td>
+      </tr>
+      <tr class="tr3">
+          <td class="normal" id="cell21"></td>
+          <td class="normal" id="cell22"></td>
+          <td class="normal" id="cell23"></td>
+          <td class="normal" id="cell24"></td>
+          <td class="normal" id="cell25"></td>
+          <td class="normal" id="cell26"></td>
+          <td class="normal" id="cell27"></td>
+          <td class="normal" id="cell28"></td>
+          <td class="normal" id="cell29"></td>
+      </tr>
+      <tr class="tr4">
+          <td class="normal" id="cell31"></td>
+          <td class="normal" id="cell32"></td>
+          <td class="normal" id="cell33"></td>
+          <td class="normal" id="cell34"></td>
+          <td class="normal" id="cell35"></td>
+          <td class="normal" id="cell36"></td>
+          <td class="normal" id="cell37"></td>
+          <td class="normal" id="cell38"></td>
+          <td class="normal" id="cell39"></td>
+      </tr>
+      <tr class="tr5">
+          <td class="normal" id="cell41"></td>
+          <td class="normal" id="cell42"></td>
+          <td class="normal" id="cell43"></td>
+          <td class="normal" id="cell44"></td>
+          <td class="normal" id="cell45"></td>
+          <td class="normal" id="cell46"></td>
+          <td class="normal" id="cell47"></td>
+          <td class="normal" id="cell48"></td>
+          <td class="normal" id="cell49"></td>
+      </tr>
+      <tr class="tr6">
+          <td class="normal" id="cell51"></td>
+          <td class="normal" id="cell52"></td>
+          <td class="normal" id="cell53"></td>
+          <td class="normal" id="cell54"></td>
+          <td class="normal" id="cell55"></td>
+          <td class="normal" id="cell56"></td>
+          <td class="normal" id="cell57"></td>
+          <td class="normal" id="cell58"></td>
+          <td class="normal" id="cell59"></td>
+      </tr>
+      <tr class="tr7">
+          <td class="normal" id="cell61"></td>
+          <td class="normal" id="cell62"></td>
+          <td class="normal" id="cell63"></td>
+          <td class="normal" id="cell64"></td>
+          <td class="normal" id="cell65"></td>
+          <td class="normal" id="cell66"></td>
+          <td class="normal" id="cell67"></td>
+          <td class="normal" id="cell68"></td>
+          <td class="normal" id="cell69"></td>
+      </tr>
+      <tr class="tr8">
+          <td class="normal" id="cell71"></td>
+          <td class="normal" id="cell72"></td>
+          <td class="normal" id="cell73"></td>
+          <td class="normal" id="cell74"></td>
+          <td class="normal" id="cell75"></td>
+          <td class="normal" id="cell76"></td>
+          <td class="normal" id="cell77"></td>
+          <td class="normal" id="cell78"></td>
+          <td class="normal" id="cell79"></td>
+      </tr>
+      <tr class="tr9">
+          <td class="normal" id="cell81"></td>
+          <td class="normal" id="cell82"></td>
+          <td class="normal" id="cell83"></td>
+          <td class="normal" id="cell84"></td>
+          <td class="normal" id="cell85"></td>
+          <td class="normal" id="cell86"></td>
+          <td class="normal" id="cell87"></td>
+          <td class="normal" id="cell88"></td>
+          <td class="normal" id="cell89"></td>
+      </tr><br></br>
+  </table>
+</body>
+</html>

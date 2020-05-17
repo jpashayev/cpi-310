@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title> Document
+		</title>
+	</head>
+	
+	<body>
+		{{#if error}}
+		
+		<div 
+			class="errorBox"
+			style ="
+				font-size: 20px; 
+				font-family:Georgia Italic" 
+			align= "center" >
+		<h6> The Following Error Has Occured  </h6>
+		<br>
+			{{error}}
+			</div>
+			{{else}}
+			<div 
+				class="correctionBox"
+				style ="
+					font-size: 20px; 
+					font-weight: bold;
+					font-family:Georgia Italic"
+				align= "center" >
+				<h6> Page Display  </h6>
+				<br>
+			</div>
+			{{/if}}
+		{{{body}}}
+	</body>
+</html>

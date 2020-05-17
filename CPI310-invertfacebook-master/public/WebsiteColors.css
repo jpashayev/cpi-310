@@ -1,0 +1,42 @@
+body
+{
+  background-color: lightblue;
+  text-align: center;
+}
+h1
+{
+  color: darkblue ;
+}
+a
+{
+  color: darkred;
+  text-indent: 100px;
+}
+button
+{
+  padding: 0;
+  border: 0;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  background-color: gray;
+  outline: none;
+  line-height: 0px;
+}
+#cellE1,#cellE2,#cellE3,#cellE4,#cellE5,#cellE6,#cellE7,#cellE8,#cellE9,#cellE10,
+#cellE11,#cellE12,#cellE13,#cellE14,#cellE15,#cellE16,#cellE17,#cellE18,#cellE19,#cellE20,
+#cellE21,#cellE22,#cellE23,#cellE24,#cellE25,#cellE26,#cellE27,#cellE28,#cellE29,#cellE30,
+#cellE31,#cellE32,#cellE33,#cellE34,#cellE35,#cellE36,#cellE37,#cellE38,#cellE39,#cellE40,
+#cellE41,#cellE42,#cellE43,#cellE44,#cellE45,#cellE46,#cellE47,#cellE48,#cellE49,#cellE50,
+#cellE51,#cellE52,#cellE53,#cellE54,#cellE55,#cellE56,#cellE57,#cellE58,#cellE59,#cellE60,
+#cellE61,#cellE62,#cellE63,#cellE64,#cellE65,#cellE66,#cellE67,#cellE68,#cellE69,#cellE70,
+#cellE71,#cellE72,#cellE73,#cellE74,#cellE75,#cellE76,#cellE77,#cellE78,#cellE79,#cellE80,
+#cellE81,#cellE82,#cellE83,#cellE84,#cellE85,#cellE86,#cellE87,#cellE88,#cellE89,#cellE90,
+#cellE91,#cellE92,#cellE93,#cellE94,#cellE95,#cellE96,#cellE97,#cellE98,#cellE99,#cellE100
+{
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
